@@ -1,5 +1,8 @@
 package bootcam.data;
 
+import bootcam.annotation.Fancy;
+
+@Fancy(name = "Level", tags = {"Application", "Java"})
 public enum Level {
     STANDARD("Standard Level"),
     PREMIUM("Premium Level"),

@@ -6,7 +6,6 @@ import bootcam.data.Level;
 public class EnumApp {
     public static void main(String[] args) {
 
-        // enum
         Customer customer = new Customer();
         customer.setName("Dani imdadur");
         customer.setLevel(Level.PREMIUM);
