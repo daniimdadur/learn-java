@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e0747458-b7d9-4cab-b71b-7cbafe1e8208" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-oop/bootcam/application/AnimalApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-oop/bootcam/application/AnimalApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-oop/bootcam/data/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-oop/bootcam/data/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-oop/bootcam/data/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-oop/bootcam/data/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bootcam/application/AnimalApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootcam/application/AnimalApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bootcam/application/EnumApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootcam/application/EnumApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bootcam/data/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootcam/data/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bootcam/data/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootcam/data/Level.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
