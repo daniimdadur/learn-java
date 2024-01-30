@@ -3,14 +3,14 @@ package com.springdasar.model2;
 public class Ayah {
     private String name;
     private String tl;
-    private String alamat;
+    private Alamat alamat;
     private String pekerjaan;
     private Integer penghasilan;
     private String namaAyah;
     private String namaIbu;
     private Integer anakke;
 
-    public Ayah(String name, String tl, String alamat, String pekerjaan, Integer penghasilan, String namaAyah, String namaIbu, Integer anakke) {
+    public Ayah(String name, String tl, Alamat alamat, String pekerjaan, Integer penghasilan, String namaAyah, String namaIbu, Integer anakke) {
         this.name = name;
         this.tl = tl;
         this.alamat = alamat;
@@ -37,11 +37,11 @@ public class Ayah {
         this.tl = tl;
     }
 
-    public String getAlamat() {
+    public Alamat getAlamat() {
         return alamat;
     }
 
-    public void setAlamat(String alamat) {
+    public void setAlamat(Alamat alamat) {
         this.alamat = alamat;
     }
 

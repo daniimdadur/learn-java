@@ -38,9 +38,9 @@ public class ListController {
     public ResponseEntity<Object> data2(){
         List<Keluarga> result2 = new ArrayList<>();
 
-        Ayah ayah = new Ayah("Joko","Ciamis","Pamarican","Job Develoment",20_000_000,"Fulan","Fulanah",2);
-        Ibu ibu = new Ibu("Vida","Bekasi","Cikarang","Translator",20_000_000,"Fulan","Fulanah",1);
         Alamat alamatAyah = new Alamat("Ciparakan",9-4,"Sukahurip","Pamarican","Ciamis","Jawa Barat","Indonesia");
+        Ayah ayah = new Ayah("Joko","Ciamis",alamatAyah,"Job Develoment",20_000_000,"Fulan","Fulanah",2);
+        Ibu ibu = new Ibu("Vida","Bekasi","Cikarang","Translator",20_000_000,"Fulan","Fulanah",1);
         Alamat alamatAnak = new Alamat("Ciparakan",9-4,"Sukahurip","Pamarican","Ciamis","Jawa Barat","Indonesia");
 
         List<Anak> anak = Arrays.asList(
