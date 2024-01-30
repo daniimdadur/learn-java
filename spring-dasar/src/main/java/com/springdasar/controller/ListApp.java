@@ -16,7 +16,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/list")
-public class ListController {
+public class ListApp {
     @GetMapping
     public ResponseEntity<Object> data(){
         List<Kelas> result = new ArrayList<>();
@@ -38,16 +38,23 @@ public class ListController {
     public ResponseEntity<Object> data2(){
         List<Keluarga> result2 = new ArrayList<>();
 
-        Alamat alamatAyah = new Alamat("Ciparakan",9-4,"Sukahurip","Pamarican","Ciamis","Jawa Barat","Indonesia");
-        Ayah ayah = new Ayah("Joko","Ciamis",alamatAyah,"Job Develoment",20_000_000,"Fulan","Fulanah",2);
-        Ibu ibu = new Ibu("Vida","Bekasi","Cikarang","Translator",20_000_000,"Fulan","Fulanah",1);
-        Alamat alamatAnak = new Alamat("Ciparakan",9-4,"Sukahurip","Pamarican","Ciamis","Jawa Barat","Indonesia");
+        Alamat alamatIbu = new Alamat("Perum taman permata indah","04/04", "Waringin Jaya","Kedung Waringin","Bekasi","Jawa Barat","Indonesia");
+        Alamat alamatAyah = new Alamat("Ciparakan","09/04","Sukahurip","Pamarican","Ciamis","Jawa Barat","Indonesia");
+        Alamat alamatAnak = new Alamat("Ciparakan","09/04","Sukahurip","Pamarican","Ciamis","Jawa Barat","Indonesia");
+
+        TempatTanggalLahir ttlAyah = new TempatTanggalLahir("Ciamis","13-12-2003");
+        TempatTanggalLahir ttlIbu = new TempatTanggalLahir("Bekasi","22-12-05");
+        TempatTanggalLahir ttlAnak1 = new TempatTanggalLahir("Ciamis","13-12-2033");
+        TempatTanggalLahir ttlAnak2 = new TempatTanggalLahir("Banjar","22-12-2035");
+
+        Ayah ayah = new Ayah(1322,"Dani",ttlAyah,"Laki-laki",alamatAyah,"Islam","Sudah Kawin","Job Develoment","Indonesia",30_000_000,"Fulan","Fulanah",2);
+        Ibu ibu = new Ibu(2212,"Vida",ttlIbu,"Perempuan",alamatIbu,"Islam","Sudah Kawin","IRT","Indonesia",25_000_000,"Fulan","Fulanah",1);
 
         List<Anak> anak = Arrays.asList(
-                new Anak("Syahsu","Laki-laki",17,"Ciamis",alamatAnak,"Dani","Vida"),
-                new Anak("Fulanah","Perempuan",15,"Ciamis",alamatAnak,"Dani","Vida")
+                new Anak(1223,"Syahsu",ttlAnak1,"Laki-laki",alamatAnak,"Islam","Belum Kawin","Pelajar","Indoneisa","Dani","Vida"),
+                new Anak(2132,"Fulanah",ttlAnak2,"Perempuan",alamatAnak,"Islam","Belum Kawin","Pelajar","Indonesia","Dani","Vida")
         );
-        Keluarga keluarga = new Keluarga(1322,ayah,ibu,anak);
+        Keluarga keluarga = new Keluarga(1234,ayah,ibu,anak);
         result2.add(keluarga);
 
         return ResponseEntity.ok().body(result2);
