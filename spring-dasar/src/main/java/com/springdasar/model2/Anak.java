@@ -8,7 +8,7 @@ public class Anak {
     private Alamat alamat;
     private String  namaAyah;
     private String namaIbu;
-
+//constructor
     public Anak(String name, String gender, Integer umur, String tl, Alamat alamat, String namaAyah, String namaIbu) {
         this.name = name;
         this.gender = gender;
