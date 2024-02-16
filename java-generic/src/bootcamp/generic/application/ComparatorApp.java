@@ -15,7 +15,8 @@ public class ComparatorApp {
         Comparator<Person> comparator = new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
-                return o1.getName().compareTo(o2.getName());
+                return o1.getName().compareTo(o2.getName()); //asending, jika ingin desending maka di returnnya dibalikan  angkanya,
+                                                            //contoh = return 02.getName().compareTo(01.getName());
             }
         };
         Arrays.sort(people,comparator);

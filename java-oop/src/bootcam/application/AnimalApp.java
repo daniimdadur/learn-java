@@ -11,5 +11,9 @@ public class AnimalApp {
         Animal animal = new Cat();
         animal.name = "puss";
         animal.run();
+
+        Cat cat = new Cat();
+        cat.name = "Sabil";
+        cat.run("Pamarican");
     }
 }

@@ -18,9 +18,9 @@ public class StringApp {
         for (String value : names){
             System.out.println(value);
         }
-        System.out.println(" ".isBlank());
-        System.out.println(" ".isEmpty());
-        System.out.println("".isEmpty());
+        System.out.println(" ".isBlank()); //true, disebut blank karena ada spasi.
+        System.out.println(" ".isEmpty()); //false, karena ada spasi.
+        System.out.println("".isEmpty()); //true, karena benar2 kosong.
         System.out.println(name.charAt(0)); //mengambil value
 
         char[] chars = name.toCharArray(); //mengambil semua value
